@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chris Carter | Broker, REALTOR® — Ivester Jackson Coastal | Christie's International Real Estate</title>
+<meta name="description" content="Coastal North Carolina real estate, backed by proprietary market intelligence. Chris Carter, NC Broker #353368 — Ivester Jackson Coastal | Christie's International Real Estate.">
+<script defer src="https://cpi-beacon.carterpropertyservice.workers.dev/beacon.js?site=landing-page&context=landing"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #111111;
+  --ink-deep: #000000;
+  --panel: #1c1c1c;
+  --raised: #232323;
+  --gold: #b5935a;
+  --gold-bright: #d4b378;
+  --gold-tint: rgba(181, 147, 90, 0.13);
+  --text: #f5f2ec;
+  --text-2: #a8a29e;
+  --border: rgba(255, 255, 255, 0.10);
+  --good: #7fbf9e;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .serif { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; }
+a { color: var(--gold); text-decoration: none; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--gold); outline-offset: 2px;
+}
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+.eyebrow {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--gold);
+}
+
+/* ── MASTHEAD ─────────────────────────────── */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(17,17,17,0.92);
+  backdrop-filter: blur(8px);
+}
+.masthead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.masthead-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; letter-spacing: 0.02em; color: var(--text); }
+.masthead-name span { color: var(--gold); }
+nav { display: flex; gap: 22px; font-size: 13px; font-weight: 500; }
+nav a { color: var(--text-2); transition: color .15s; }
+nav a:hover { color: var(--gold-bright); }
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  position: relative;
+  padding: 96px 0 84px;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero-contours {
+  position: absolute; inset: 0; z-index: 0;
+  opacity: 0.5; pointer-events: none;
+}
+.hero-inner { position: relative; z-index: 1; max-width: 720px; }
+.hero h1 {
+  font-size: clamp(42px, 6.4vw, 68px);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  margin: 18px 0 22px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-bright); }
+.hero p.lede { font-size: 18px; color: var(--text-2); max-width: 560px; }
+.hero-ctas { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: 13px 26px; border-radius: 6px;
+  font-size: 14px; font-weight: 600; letter-spacing: 0.02em;
+  transition: transform .15s, background .15s;
+}
+.btn-gold { background: var(--gold); color: var(--ink-deep); }
+.btn-gold:hover { background: var(--gold-bright); transform: translateY(-1px); }
+.btn-ghost { border: 1px solid var(--border); color: var(--text); }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold-bright); }
+.hero-cred { margin-top: 40px; font-size: 12.5px; color: var(--text-2); letter-spacing: 0.04em; }
+.hero-cred b { color: var(--text); font-weight: 600; }
+
+/* ── SECTIONS ─────────────────────────────── */
+section { padding: 76px 0; border-bottom: 1px solid var(--border); }
+.section-head { margin-bottom: 44px; max-width: 640px; }
+.section-head h2 { font-size: clamp(30px, 4vw, 40px); margin-top: 12px; line-height: 1.15; }
+.section-head p { color: var(--text-2); margin-top: 12px; }
+
+/* ── INSTRUMENTS (tools) ──────────────────── */
+.tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.tool {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 26px 24px;
+  display: flex; flex-direction: column; gap: 12px;
+  transition: border-color .18s, transform .18s;
+}
+.tool:hover { border-color: var(--gold); transform: translateY(-2px); }
+.tool-status {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--good);
+}
+.tool-status::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--good);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+@media (prefers-reduced-motion: reduce) {
+  .tool-status::before { animation: none; }
+  .btn, .tool { transition: none; }
+  html { scroll-behavior: auto; }
+}
+.tool h3 { font-size: 24px; color: var(--text); }
+.tool p { font-size: 14px; color: var(--text-2); flex: 1; }
+.tool-link { font-size: 13.5px; font-weight: 600; color: var(--gold); }
+.tool-link::after { content: " →"; }
+.tool:hover .tool-link { color: var(--gold-bright); }
+
+/* ── APPROACH ─────────────────────────────── */
+.approach { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 34px; }
+.approach-item { border-top: 2px solid var(--gold); padding-top: 18px; }
+.approach-item h3 { font-size: 21px; margin-bottom: 8px; }
+.approach-item p { font-size: 14px; color: var(--text-2); }
+
+/* ── CONTACT ──────────────────────────────── */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+@media (max-width: 800px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-side h2 { font-size: clamp(30px, 4vw, 38px); margin-top: 12px; }
+.contact-side p { color: var(--text-2); margin-top: 14px; font-size: 15px; }
+.contact-direct { margin-top: 26px; font-size: 15px; line-height: 2; }
+.contact-direct a { display: block; }
+form { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 28px; }
+.field { margin-bottom: 16px; }
+label { display: block; font-size: 12.5px; font-weight: 600; color: var(--text-2); margin-bottom: 6px; letter-spacing: 0.03em; }
+input, textarea, select {
+  width: 100%; padding: 12px 14px; border-radius: 6px;
+  background: var(--raised); border: 1px solid var(--border);
+  color: var(--text); font-family: inherit; font-size: 15px;
+}
+input::placeholder, textarea::placeholder { color: #6e6a64; }
+textarea { min-height: 96px; resize: vertical; }
+.consent-line {
+  font-size: 12px; color: var(--text-2); line-height: 1.55;
+  padding: 12px 14px; background: var(--gold-tint);
+  border-left: 3px solid var(--gold); border-radius: 4px;
+  margin: 18px 0 16px;
+}
+.submit-btn {
+  width: 100%; padding: 15px; border: none; border-radius: 6px;
+  background: var(--gold); color: var(--ink-deep);
+  font-size: 15px; font-weight: 700; letter-spacing: 0.02em;
+  cursor: pointer; transition: background .15s;
+}
+.submit-btn:hover { background: var(--gold-bright); }
+.form-note { display: none; margin-top: 14px; font-size: 14px; padding: 12px 14px; border-radius: 6px; }
+.form-note.ok { display: block; background: rgba(127,191,158,0.14); color: var(--good); }
+.form-note.err { display: block; background: rgba(217,118,118,0.14); color: #d97676; }
+
+/* ── FOOTER ───────────────────────────────── */
+footer { padding: 44px 0 56px; font-size: 12.5px; color: var(--text-2); }
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--text); margin-bottom: 10px; }
+.footer-brand span { color: var(--gold); }
+footer p { margin-bottom: 6px; }
+.footer-legal { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 11.5px; line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap masthead">
+    <div class="masthead-name">Chris <span>Carter</span> <span style="color:var(--text-2); font-family:'Inter'; font-size:12px; letter-spacing:0.08em;">&nbsp;BROKER · REALTOR®</span></div>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <svg class="hero-contours" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#b5935a" stroke-width="1" opacity="0.16">
+      <path d="M-50,430 C180,380 320,470 560,420 S920,340 1250,400"/>
+      <path d="M-50,460 C200,415 340,500 580,455 S940,380 1250,435"/>
+      <path d="M-50,490 C220,450 360,528 600,488 S960,420 1250,468"/>
+      <path d="M-50,395 C160,345 300,435 540,385 S900,300 1250,365"/>
+      <path d="M-50,355 C150,310 290,395 530,350 S880,265 1250,330"/>
+      <path d="M-50,310 C140,270 280,350 520,310 S860,230 1250,292"/>
+    </g>
+    <g fill="none" stroke="#b5935a" stroke-width="0.75" opacity="0.09">
+      <path d="M-50,260 C130,225 270,300 510,265 S840,195 1250,250"/>
+      <path d="M-50,215 C120,185 260,255 500,222 S820,160 1250,210"/>
+    </g>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Carter Property Intelligence · Coastal North Carolina</div>
+    <h1>Market intelligence,<br><em>broker execution.</em></h1>
+    <p class="lede">Data-driven tools, a builder's eye, and Christie's-caliber marketing — applied to buying, selling, and leasing across Wilmington's coastal markets.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="#contact">Work with Chris</a>
+      <a class="btn btn-ghost" href="#tools">Use the tools</a>
+    </div>
+    <div class="hero-cred"><b>Chris Carter</b> · NC Broker Lic. #353368 · Ivester Jackson Coastal | Christie's International Real Estate</div>
+  </div>
+</div>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Field Instruments</div>
+      <h2>Free tools, built in-house, live now.</h2>
+      <p>Every instrument below is proprietary — researched, coded, and maintained by Chris. Use them freely; that's the point.</p>
+    </div>
+    <div class="tools">
+      <a class="tool" href="https://carterpropertyservice-commits.github.io/Residential-Home-Buyer-Programs/homeownership-assistance-form.html">
+        <span class="tool-status">Live</span>
+        <h3>Buyer Assistance Matcher</h3>
+        <p>Answer five questions, get matched to North Carolina down-payment and homeownership assistance programs you may qualify for — with real dollar figures and stacking math.</p>
+        <span class="tool-link">Check your programs</span>
+      </a>
+      <a class="tool" href="https://carterpropertyservice-commits.github.io/mortgage-snapshot/">
+        <span class="tool-status">Live</span>
+        <h3>Daily Mortgage Snapshot</h3>
+        <p>Rates, program alerts, loan limits, and market outlook — compiled automatically every weekday from federal data sources and industry reporting.</p>
+        <span class="tool-link">See today's snapshot</span>
+      </a>
+      <a class="tool" href="https://carterpropertyservice-commits.github.io/Commercial-Client-Forms/intake_form.html">
+        <span class="tool-status">Live</span>
+        <h3>Commercial Client Intake</h3>
+        <p>Buying, selling, or leasing commercial property? Structured intake and requirements forms that make the first conversation twice as productive.</p>
+        <span class="tool-link">Start your intake</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The Approach</div>
+      <h2>Three disciplines, one broker.</h2>
+    </div>
+    <div class="approach">
+      <div class="approach-item">
+        <h3>Construction literacy</h3>
+        <p>A decade of hands-on construction and finish carpentry — framing through luxury staging — means Chris reads a property's condition, potential, and true cost the way an inspector does, before you're committed.</p>
+      </div>
+      <div class="approach-item">
+        <h3>Proprietary data</h3>
+        <p>Carter Property Intelligence tools track rates, assistance programs, market conditions, and property records daily — so advice comes from current data, not last quarter's talking points.</p>
+      </div>
+      <div class="approach-item">
+        <h3>Christie's-caliber marketing</h3>
+        <p>Ivester Jackson Coastal's affiliation with Christie's International Real Estate brings global-standard presentation and reach to every listing — not just the waterfront ones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-side">
+      <div class="eyebrow">Contact</div>
+      <h2>Tell Chris what you're working toward.</h2>
+      <p>Buying, selling, leasing, investing — or just trying to understand your options. Every inquiry gets a direct, personal response.</p>
+      <div class="contact-direct">
+        <a href="tel:+19105403836">910-540-3836</a>
+        <a href="mailto:Chris@IJCoastal.com">Chris@IJCoastal.com</a>
+      </div>
+    </div>
+    <form id="contactForm" novalidate>
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input id="f-name" type="text" autocomplete="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" type="email" autocomplete="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input id="f-phone" type="tel" autocomplete="tel" placeholder="910-555-0100" required>
+      </div>
+      <div class="field">
+        <label for="f-interest">What brings you here?</label>
+        <select id="f-interest">
+          <option value="buying">Buying</option>
+          <option value="selling">Selling</option>
+          <option value="commercial">Commercial / leasing</option>
+          <option value="investing">Investing</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-message">Anything else about your situation? <span style="font-weight:400; text-transform:none;">(optional)</span></label>
+        <textarea id="f-message" placeholder="Timeline, neighborhood, property, questions — whatever's useful."></textarea>
+      </div>
+      <div class="consent-line">
+        By sending this message, you agree that Chris Carter, NC real estate broker (Lic. #353368), Ivester Jackson Coastal | Christie's International Real Estate, may contact you by phone, text, or email regarding your real estate goals and related services.
+      </div>
+      <button class="submit-btn" type="submit">Send to Chris</button>
+      <div class="form-note" id="formNote"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">Chris <span>Carter</span></div>
+    <p>Broker · REALTOR® · NC License #353368</p>
+    <p>Ivester Jackson Coastal | Christie's International Real Estate</p>
+    <p><a href="tel:+19105403836">910-540-3836</a> · <a href="mailto:Chris@IJCoastal.com">Chris@IJCoastal.com</a></p>
+    <div class="footer-legal">
+      <p>Equal Housing Opportunity. Chris Carter is a real estate broker licensed in the State of North Carolina, affiliated with Ivester Jackson Coastal | Christie's International Real Estate. Information provided through this site and its tools is for general informational purposes and is not a substitute for legal, tax, or lending advice.</p>
+      <p>Your data: information you submit through this form is sent directly to Chris Carter for follow-up. This site also collects anonymous usage analytics (page interactions, not tied to your name or contact information) to improve these tools.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WORKER_URL = 'https://cpi-beacon.carterpropertyservice.workers.dev';
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name = document.getElementById('f-name').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const interest = document.getElementById('f-interest').value;
+  const message = document.getElementById('f-message').value.trim();
+  const note = document.getElementById('formNote');
+
+  if (!name || !email || !phone) {
+    note.className = 'form-note err';
+    note.textContent = 'Name, email, and phone are needed so Chris can actually reach you.';
+    return;
+  }
+
+  const payload = {
+    source: 'chriscarterproperties',
+    context: 'landing',
+    name: name,
+    email: email,
+    phone: phone,
+    interest: interest,
+    message: message || null,
+    consent: 'affirmative',
+    consent_scope: 'real-estate-goals-and-related-services',
+    tcpa_consent: true,
+    tcpa_ts: new Date().toISOString(),
+    disclosure_version: '2.0',
+    submitted_at: new Date().toISOString(),
+    referrer: document.referrer || ''
+  };
+
+  fetch(WORKER_URL + '/intake', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).then(function (r) {
+    if (!r.ok) throw new Error('intake failed');
+    note.className = 'form-note ok';
+    note.textContent = 'Sent. Chris will reach out directly — usually the same day.';
+    document.getElementById('contactForm').reset();
+  }).catch(function () {
+    note.className = 'form-note err';
+    note.textContent = "That didn't go through. Call or text 910-540-3836, or email Chris@IJCoastal.com.";
+  });
+});
+</script>
+</body>
+</html>
